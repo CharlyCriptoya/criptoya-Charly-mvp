@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Charly Cripto • MVP</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="glass header">
+      <div class="title">
+        <span class="emoji">💵</span>
+        <div>
+          <h1>Cotizaciones del Dólar (ARS)</h1>
+          <p class="muted">Oficial • Blue • Tarjeta • MEP • CCL • Cripto</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- 6 cajas -->
+    <section class="grid" id="dollarCards">
+      <article class="glass card" data-key="oficial"><h3>DÓLAR OFICIAL</h3><div class="prices"><div>venta <strong class="venta">—</strong></div><div>compra <strong class="compra">—</strong></div></div><div class="ago muted">act: —</div></article>
+      <article class="glass card" data-key="tarjeta"><h3>DÓLAR TARJETA</h3><div class="prices"><div>venta <strong class="venta">—</strong></div><div>compra <strong class="compra">—</strong></div></div><div class="ago muted">act: —</div></article>
+      <article class="glass card" data-key="blue"><h3>DÓLAR BLUE</h3><div class="prices"><div>venta <strong class="venta">—</strong></div><div>compra <strong class="compra">—</strong></div></div><div class="ago muted">act: —</div></article>
+      <article class="glass card" data-key="mep"><h3>DÓLAR MEP</h3><div class="prices"><div>venta <strong class="venta">—</strong></div><div>compra <strong class="compra">—</strong></div></div><div class="ago muted">act: —</div></article>
+      <article class="glass card" data-key="ccl"><h3>DÓLAR CCL</h3><div class="prices"><div>venta <strong class="venta">—</strong></div><div>compra <strong class="compra">—</strong></div></div><div class="ago muted">act: —</div></article>
+      <article class="glass card" data-key="cripto"><h3>DÓLAR CRIPTO</h3><div class="prices"><div>venta <strong class="venta">—</strong></div><div>compra <strong class="compra">—</strong></div></div><div class="ago muted">act: —</div></article>
+    </section>
+
+    <!-- Bloque Markets -->
+    <section class="glass block">
+      <div class="block-head">
+        <div class="title"><span class="emoji">📊</span><h2>Exchanges</h2></div>
+        <div class="pair-buttons">
+          <button class="chip" data-pair="USDTARS">USDT/ARS (P2P)</button>
+          <button class="chip active" data-pair="BTCUSDT">BTC/USDT</button>
+          <button class="chip" data-pair="ETHUSDT">ETH/USDT</button>
+          <button class="chip" data-pair="SOLUSDT">SOL/USDT</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table id="tbl">
+          <thead>
+            <tr>
+              <th>EXCHANGE</th>
+              <th>PAR</th>
+              <th>COMPRA<br><small>(ASK)</small></th>
+              <th>VENTA<br><small>(BID)</small></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <p class="legend">
+          Orden: <b>mejor precio de compra</b> (más barato → más caro).<br>
+          <span class="green">Verde</span> = mejor compra • <span class="red">Rojo</span> = peor venta.
+        </p>
+      </div>
+    </section>
+
+    <footer class="muted foot">build v1.9 • Charly Cripto © 2025</footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
