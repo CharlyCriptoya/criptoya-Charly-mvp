@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💱 Charly Cripto • MVP</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💱 Cotizaciones del Dólar (ARS)</h1>
+      <p>Oficial • Blue • Tarjeta • MEP • CCL • Cripto</p>
+    </header>
+
+    <!-- Cards de tipos de dólar -->
+    <section class="card-grid" id="dolar-section">
+      <div class="card"><h3>DÓLAR OFICIAL</h3><p class="precio" id="oficial"></p></div>
+      <div class="card"><h3>DÓLAR TARJETA</h3><p class="precio" id="tarjeta"></p></div>
+      <div class="card"><h3>DÓLAR BLUE</h3><p class="precio" id="blue"></p></div>
+      <div class="card"><h3>DÓLAR MEP</h3><p class="precio" id="mep"></p></div>
+      <div class="card"><h3>DÓLAR CCL</h3><p class="precio" id="ccl"></p></div>
+      <div class="card"><h3>DÓLAR CRIPTO</h3><p class="precio" id="cripto"></p></div>
+    </section>
+
+    <!-- Sección de criptos -->
+    <section class="crypto-panel">
+      <h2>Criptomonedas</h2>
+      <div class="btn-group">
+        <button class="btn" onclick="loadCrypto('BTC')">BTC</button>
+        <button class="btn" onclick="loadCrypto('ETH')">ETH</button>
+        <button class="btn" onclick="loadCrypto('SOL')">SOL</button>
+        <button class="btn" onclick="loadCrypto('USDT')">USDT</button>
+        <button class="btn" onclick="loadCrypto('USDC')">USDC</button>
+        <button class="btn" onclick="loadCrypto('DAI')">DAI</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr><th>Exchange</th><th>Símbolo</th><th>Precio (USD)</th></tr>
+        </thead>
+        <tbody id="crypto-table">
+          <tr><td colspan="3">Seleccioná una moneda ⬆</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      build v1.9 • Charly Cripto © 2025
+    </footer>
+  </div>
+</body>
+</html>
