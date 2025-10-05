@@ -1,0 +1,127 @@
+/* === Estilos generales === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #fff;
+  background: url("Muro.jpg") center/cover no-repeat fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  backdrop-filter: blur(3px);
+}
+
+/* === Contenedor principal === */
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 40px;
+  width: 95%;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+/* === Encabezado === */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+header p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* === Tabla de cotizaciones === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background: rgba(0, 255, 204, 0.2);
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+th {
+  color: #00ffcc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+td {
+  color: #fff;
+}
+
+/* === Colores de variaciones === */
+.up {
+  color: #00ff88;
+  font-weight: bold;
+}
+
+.down {
+  color: #ff5555;
+  font-weight: bold;
+}
+
+/* === Cards (opcional si mostrás exchanges) === */
+.card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+/* === Pie de página === */
+footer {
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* === Versión móvil === */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  th, td {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
